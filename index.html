@@ -1,0 +1,1635 @@
+<!doctype html>
+<html lang="es-AR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>SHOCK COFFEE PRE ENTRENO — El primer café pre-entreno hecho en Argentina</title>
+<meta name="description" content="El primer café pre-entreno: 300 mg de cafeína natural + betaína, taurina, teacrina y electrolitos. Más fuerza, más aguante, cero crash. Testeado por la UBA.">
+<meta property="og:title" content="SHOCK COFFEE — Café pre-entreno">
+<meta property="og:description" content="300 mg de cafeína natural + betaína, taurina, teacrina y electrolitos. Más fuerza, más aguante, cero crash.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quantico:wght@400;700&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+--bg:#0a0807;
+--bg-2:#100d0b;
+--bg-3:#15110e;
+--ink:#f2efe9;
+--ink-2:rgba(242,239,233,.78);
+--ink-3:rgba(242,239,233,.55);
+--ink-4:rgba(242,239,233,.32);
+--line:rgba(242,239,233,.08);
+--line-2:rgba(242,239,233,.14);
+--line-3:rgba(242,239,233,.22);
+--accent:#FFC845;
+--accent-2:#FFD978;
+--accent-soft:rgba(255,200,69,0.10);
+--warn:#E85A4F;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{
+background:var(--bg);
+color:var(--ink);
+font-family:"Inter",-apple-system,BlinkMacSystemFont,Arial,sans-serif;
+font-weight:400;
+-webkit-font-smoothing:antialiased;
+-moz-osx-font-smoothing:grayscale;
+scroll-behavior:smooth;
+font-feature-settings:"ss01","cv11";
+}
+body{padding-bottom:78px}
+a{color:inherit;text-decoration:none}
+ul{list-style:none}
+img,svg{max-width:100%;display:block}
+
+/* TYPE SYSTEM */
+.display{
+font-family:"Quantico","Quantico Fallback",sans-serif;
+font-weight:700;
+text-transform:uppercase;
+letter-spacing:-0.025em;
+line-height:0.96;
+color:var(--ink);
+}
+.mono{font-family:"JetBrains Mono","SF Mono",ui-monospace,Menlo,monospace}
+.accent{color:var(--accent)}
+.eyebrow{
+font-family:"Quantico",sans-serif;
+font-weight:700;
+font-size:11px;
+letter-spacing:.22em;
+text-transform:uppercase;
+color:var(--ink-3);
+display:inline-flex;
+align-items:center;
+gap:10px;
+}
+.eyebrow::before{content:"";display:inline-block;width:24px;height:1px;background:var(--accent)}
+.section-marker{
+font-family:"JetBrains Mono",monospace;
+font-size:10px;letter-spacing:.18em;
+color:var(--ink-4);text-transform:uppercase;
+margin-bottom:18px;display:inline-block;
+}
+.section-marker .acc{color:var(--accent)}
+
+/* LAYOUT */
+.wrap{max-width:1280px;margin:0 auto;padding:0 24px}
+@media(min-width:1024px){.wrap{padding:0 48px}}
+
+.section{padding:72px 0;border-top:1px solid var(--line);position:relative}
+@media(min-width:1024px){.section{padding:104px 0}}
+
+.section-header{margin-bottom:48px;max-width:920px}
+@media(min-width:1024px){.section-header{margin-bottom:64px}}
+.section-header h2.display{
+font-size:clamp(34px,4.6vw,68px);
+margin-top:18px;
+margin-bottom:24px;
+}
+.section-header .sub{
+font-size:clamp(15px,1.2vw,18px);
+line-height:1.55;
+color:var(--ink-2);
+max-width:640px;
+font-weight:400;
+}
+
+/* MARQUEE */
+.marquee{
+overflow:hidden;
+border-bottom:1px solid var(--line);
+padding:14px 0;
+background:var(--bg);
+display:flex;
+font-family:"Quantico",sans-serif;
+font-size:12px;
+font-weight:700;
+letter-spacing:.12em;
+color:var(--ink-2);
+text-transform:uppercase;
+}
+.marquee-track{display:inline-flex;animation:marqueeScroll 60s linear infinite;white-space:nowrap;flex-shrink:0;gap:0}
+.marquee span.it{flex-shrink:0;padding:0 24px;display:inline-flex;align-items:center;gap:24px}
+.marquee .star{color:var(--accent)}
+.marquee .sep{color:var(--ink-4);font-weight:400}
+@keyframes marqueeScroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+/* HERO */
+.hero-wrap{padding:32px 0 56px}
+@media(min-width:1024px){.hero-wrap{padding:40px 0 80px}}
+.hero{
+display:grid;
+grid-template-columns:1fr;
+gap:40px;
+align-items:center;
+}
+@media(min-width:1024px){
+.hero{grid-template-columns:1.15fr 1fr;gap:56px}
+}
+
+.hero-eyebrow-line{display:flex;align-items:center;gap:14px;margin-bottom:24px;color:var(--ink-3)}
+.hero-eyebrow-line .dot{width:6px;height:6px;border-radius:50%;background:var(--accent);flex-shrink:0;animation:pulse 2.4s ease-in-out infinite;box-shadow:0 0 12px rgba(255,200,69,.7)}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.4}}
+.hero-eyebrow-line span{font-family:"Quantico",sans-serif;font-size:11px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--ink-3)}
+
+h1.display.hero-title{
+font-size:clamp(40px,6.2vw,86px);
+line-height:0.94;
+margin-bottom:22px;
+}
+h1.display.hero-title em{font-style:normal;color:var(--ink-3)}
+h1.display.hero-title .acc-word{
+color:var(--accent);
+position:relative;
+display:inline-block;
+}
+
+.hero-sub-mono{
+font-family:"Inter",sans-serif;
+font-weight:600;
+font-size:15px;
+color:var(--ink);
+margin-bottom:14px;
+letter-spacing:0.02em;
+display:flex;
+align-items:center;
+flex-wrap:wrap;
+gap:8px 14px;
+}
+.hero-sub-mono b{color:var(--accent);font-weight:700}
+.hero-sub-mono .sep{color:var(--ink-4)}
+.hero-micro{
+font-size:14.5px;
+color:var(--ink-3);
+line-height:1.55;
+margin-bottom:32px;
+max-width:520px;
+font-weight:400;
+}
+
+.ctas{display:flex;gap:12px;flex-wrap:wrap}
+.btn{
+display:inline-flex;align-items:center;gap:14px;
+padding:14px 22px;
+font-family:"Quantico",sans-serif;
+font-weight:700;
+font-size:13px;
+letter-spacing:.14em;
+text-transform:uppercase;
+cursor:pointer;
+border:none;
+text-decoration:none;
+border-radius:0;
+transition:all .25s ease;
+line-height:1;
+}
+.btn-primary{background:var(--accent);color:var(--bg)}
+.btn-primary:hover{background:var(--accent-2);transform:translateY(-1px)}
+.btn-ghost{background:transparent;color:var(--ink);border:1px solid var(--line-3)}
+.btn-ghost:hover{border-color:var(--ink);background:rgba(242,239,233,.04)}
+.arrow{display:inline-block;transition:transform .25s ease;font-size:13px}
+.btn:hover .arrow{transform:translateX(4px)}
+
+.trust-row{
+display:flex;flex-wrap:wrap;gap:12px;
+margin-top:36px;
+padding-top:18px;
+border-top:1px solid var(--line);
+font-family:"Inter",sans-serif;
+font-size:11px;
+color:var(--ink-3);
+letter-spacing:.1em;
+text-transform:uppercase;
+font-weight:500;
+}
+.trust-row span{display:inline-flex;align-items:center;gap:6px}
+.trust-row .star{color:var(--accent)}
+.trust-row .sep{color:var(--ink-4)}
+
+/* HERO VISUAL */
+.hero-visual{
+position:relative;
+aspect-ratio:1/1;
+overflow:hidden;
+background:var(--bg-2);
+border:1px solid var(--line);
+}
+.hero-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+
+.ph-floating{
+position:absolute;
+background:rgba(15,13,12,.86);
+backdrop-filter:blur(14px);
+-webkit-backdrop-filter:blur(14px);
+border:1px solid var(--line-2);
+padding:13px 16px;
+z-index:3;
+min-width:108px;
+}
+.ph-floating.featured{border-color:rgba(255,200,69,.45)}
+.ph-floating .v{
+font-family:"Quantico",sans-serif;
+font-weight:700;font-size:22px;
+color:var(--ink);display:block;line-height:1;
+letter-spacing:-0.02em;
+}
+.ph-floating.featured .v{color:var(--accent)}
+.ph-floating .l{
+font-family:"Inter",sans-serif;
+font-size:9px;font-weight:500;
+text-transform:uppercase;
+letter-spacing:.2em;
+color:var(--ink-3);
+margin-top:7px;display:block;
+}
+.ph-tl{top:18px;right:18px}
+.ph-bl{bottom:50px;left:18px}
+.ph-br{bottom:50px;right:18px}
+.data-line{
+position:absolute;left:18px;right:18px;bottom:14px;
+display:flex;justify-content:space-between;align-items:center;
+font-family:"JetBrains Mono",monospace;font-size:9px;
+color:var(--ink-4);letter-spacing:.18em;
+padding-top:10px;border-top:1px solid var(--line);
+z-index:3;text-transform:uppercase;
+font-weight:500;
+}
+.data-line .pulse-dot{display:inline-block;width:5px;height:5px;border-radius:50%;background:var(--accent);margin-right:6px;animation:pulse 2.4s ease-in-out infinite}
+
+/* PULL QUOTE / SECTION DIVIDER */
+.divider-rule{
+height:1px;background:linear-gradient(90deg,transparent,var(--line-3),transparent);
+margin:0;
+}
+.quote-rule{
+display:flex;align-items:center;gap:24px;
+padding:24px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);
+font-family:"Quantico",sans-serif;font-size:13px;letter-spacing:.18em;
+text-transform:uppercase;color:var(--ink-3);font-weight:700;
+}
+.quote-rule .num{color:var(--accent);font-size:24px;letter-spacing:0;font-weight:700;line-height:1}
+
+/* PROBLEMA — energy chart visual */
+.energy-chart{
+margin-bottom:48px;
+border:1px solid var(--line);
+background:var(--bg-2);
+padding:32px;
+}
+@media(min-width:768px){.energy-chart{padding:40px}}
+.energy-chart .chart-head{
+display:flex;justify-content:space-between;align-items:flex-start;
+flex-wrap:wrap;gap:16px;margin-bottom:24px;
+}
+.energy-chart .chart-head .lbl{
+font-family:"Quantico",sans-serif;font-size:11px;letter-spacing:.22em;
+text-transform:uppercase;color:var(--ink-3);font-weight:700;display:block;margin-bottom:6px;
+}
+.energy-chart .chart-head h4{
+font-family:"Quantico",sans-serif;font-size:18px;letter-spacing:-0.01em;
+text-transform:uppercase;color:var(--ink);font-weight:700;line-height:1.1;
+}
+.energy-chart .legend{display:flex;flex-wrap:wrap;gap:20px;font-family:"Inter",sans-serif;font-size:12px;color:var(--ink-3);letter-spacing:0.06em;text-transform:uppercase;font-weight:500}
+.energy-chart .legend span{display:inline-flex;align-items:center;gap:8px}
+.energy-chart .legend .swatch{width:14px;height:2px;display:inline-block}
+.energy-chart .legend .swatch.shock{background:var(--accent)}
+.energy-chart .legend .swatch.cmn{background:var(--warn)}
+.energy-chart svg{width:100%;height:auto;display:block}
+
+/* PROBLEMA — cards grid */
+.grid-2{display:grid;grid-template-columns:1fr;gap:1px;background:var(--line);border:1px solid var(--line)}
+@media(min-width:768px){.grid-2{grid-template-columns:1fr 1fr}}
+@media(min-width:1024px){.grid-2{grid-template-columns:repeat(4,1fr)}}
+.card{
+background:var(--bg);
+padding:32px 28px;
+transition:background .25s;
+position:relative;
+}
+.card:hover{background:var(--bg-2)}
+.card .num{
+font-family:"Quantico",sans-serif;
+font-weight:700;font-size:11px;
+letter-spacing:.18em;color:var(--accent);
+margin-bottom:24px;display:block;
+}
+.card h3.display{
+font-size:18px;
+margin-bottom:14px;
+line-height:1.1;
+}
+.card p{font-size:14px;line-height:1.6;color:var(--ink-2);font-weight:400}
+
+/* STAT HIGHLIGHT — improved visual */
+.stat-highlight{
+margin-top:56px;
+border:1px solid var(--line-2);
+background:var(--bg-2);
+padding:40px;
+display:grid;
+grid-template-columns:1fr;
+gap:24px;
+align-items:center;
+}
+@media(min-width:1024px){
+.stat-highlight{grid-template-columns:auto 1fr;gap:48px;padding:56px}
+}
+.stat-highlight .stat-num{
+font-family:"Quantico",sans-serif;
+font-weight:700;
+font-size:clamp(72px,11vw,140px);
+line-height:0.85;
+letter-spacing:-0.04em;
+color:var(--accent);
+text-shadow:0 0 60px rgba(255,200,69,.15);
+}
+.stat-highlight .bar{
+margin-top:10px;
+height:4px;background:var(--line);
+position:relative;
+}
+.stat-highlight .bar::before{
+content:"";position:absolute;left:0;top:0;height:100%;
+width:73%;background:var(--accent);
+}
+.stat-highlight .stat-text{font-size:clamp(15px,1.3vw,18px);line-height:1.5;color:var(--ink-2);max-width:520px;font-weight:400}
+.stat-highlight .stat-text strong{color:var(--ink);font-weight:600}
+
+/* SOLUCIÓN — stat cards */
+.grid-3{display:grid;grid-template-columns:1fr;gap:1px;background:var(--line);border:1px solid var(--line)}
+@media(min-width:768px){.grid-3{grid-template-columns:repeat(3,1fr)}}
+.stat-card{background:var(--bg);padding:36px 32px;display:flex;flex-direction:column;gap:18px;position:relative;overflow:hidden}
+.stat-card::after{
+content:"";position:absolute;left:0;bottom:0;height:3px;width:0;
+background:var(--accent);transition:width .4s ease;
+}
+.stat-card:hover::after{width:100%}
+.stat-card .top{display:flex;justify-content:space-between;align-items:flex-start;gap:16px}
+.stat-card .num{
+font-family:"Quantico",sans-serif;font-weight:700;
+font-size:11px;letter-spacing:.18em;color:var(--accent);
+}
+.stat-card .kpi{
+font-family:"Quantico",sans-serif;font-weight:700;
+font-size:46px;color:var(--accent);line-height:0.9;
+letter-spacing:-0.03em;text-align:right;text-transform:uppercase;
+}
+.stat-card .kpi-label{
+font-family:"Inter",sans-serif;font-size:10px;font-weight:500;
+text-transform:uppercase;letter-spacing:.18em;
+color:var(--ink-3);margin-top:8px;text-align:right;
+}
+.stat-card h3.display{font-size:20px;line-height:1.1;letter-spacing:-0.02em;color:var(--ink)}
+.stat-card p{font-size:14px;line-height:1.6;color:var(--ink-2);font-weight:400}
+
+/* MOLECULE DECOR */
+.molecule-decor{
+position:absolute;right:-60px;top:-60px;
+width:280px;height:280px;
+opacity:.18;pointer-events:none;
+}
+.molecule-decor svg{width:100%;height:100%}
+
+/* SPEC SHEET */
+.spec-wrapper{display:grid;grid-template-columns:1fr;gap:32px;align-items:start}
+@media(min-width:1024px){.spec-wrapper{grid-template-columns:1fr 1.5fr;gap:64px}}
+.spec-side .spec-side-eyebrow{margin-bottom:18px}
+.spec-side h3.display{font-size:clamp(24px,2.8vw,36px);margin-bottom:18px;line-height:1}
+.spec-side p{font-size:14.5px;line-height:1.6;color:var(--ink-2);margin-bottom:18px}
+.verified-badge{
+display:inline-flex;align-items:center;gap:10px;
+border:1px solid var(--accent);background:var(--accent-soft);
+padding:9px 14px;
+font-family:"Quantico",sans-serif;
+font-size:11px;letter-spacing:.18em;text-transform:uppercase;
+color:var(--accent);font-weight:700;
+margin-bottom:24px;
+}
+.verified-badge .check{
+width:14px;height:14px;border-radius:50%;
+background:var(--accent);
+display:inline-flex;align-items:center;justify-content:center;
+color:var(--bg);font-size:9px;font-weight:900;
+}
+.spec{background:var(--bg-2);border:1px solid var(--line);position:relative}
+.spec::before{content:"";position:absolute;top:-1px;left:-1px;width:32px;height:1px;background:var(--accent)}
+.spec::after{content:"";position:absolute;bottom:-1px;right:-1px;width:32px;height:1px;background:var(--accent)}
+.spec-head{
+padding:20px 28px;
+border-bottom:1px solid var(--line);
+display:flex;align-items:center;justify-content:space-between;
+gap:16px;flex-wrap:wrap;
+}
+.spec-head .lbl{font-family:"Quantico",sans-serif;font-weight:700;font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--accent)}
+.spec-head .meta{font-family:"JetBrains Mono",monospace;font-size:10px;color:var(--ink-3);letter-spacing:.16em;text-transform:uppercase}
+.spec-row{
+display:grid;grid-template-columns:1fr auto;
+padding:14px 28px;
+border-bottom:1px solid var(--line);
+align-items:baseline;gap:16px;
+transition:background .2s;
+}
+.spec-row:hover{background:rgba(255,200,69,.025)}
+.spec-row:last-of-type{border-bottom:none}
+.spec-row .k{color:var(--ink-3);font-size:13px;font-weight:400}
+.spec-row .val{
+font-family:"Quantico",sans-serif;
+color:var(--ink);font-size:14px;
+font-weight:700;text-align:right;
+text-transform:uppercase;
+}
+.spec-row .val.acc{color:var(--accent)}
+.spec-cta{padding:20px 28px;border-top:1px solid var(--line);text-align:left}
+.spec-cta a{
+color:var(--accent);
+font-family:"Quantico",sans-serif;
+font-size:12px;
+display:inline-flex;gap:12px;align-items:center;
+letter-spacing:.16em;text-transform:uppercase;font-weight:700;
+border-bottom:1px solid var(--accent);
+padding-bottom:5px;
+transition:opacity .25s;
+}
+.spec-cta a:hover{opacity:.7}
+
+/* COMPARE TABLE — with duration bars */
+.duration-viz{
+background:var(--bg-2);border:1px solid var(--line);
+padding:24px 28px;margin-bottom:32px;
+}
+.duration-viz .head{
+display:flex;justify-content:space-between;align-items:center;
+margin-bottom:20px;flex-wrap:wrap;gap:12px;
+}
+.duration-viz .head .lbl{font-family:"Quantico",sans-serif;font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--ink-3);font-weight:700}
+.duration-row{
+display:grid;grid-template-columns:140px 1fr auto;align-items:center;gap:16px;
+padding:10px 0;
+}
+.duration-row .label{
+font-family:"Quantico",sans-serif;font-size:13px;
+text-transform:uppercase;color:var(--ink-2);font-weight:700;letter-spacing:0.04em;
+}
+.duration-row .label.shock{color:var(--ink)}
+.duration-row .bar{height:14px;background:var(--line);position:relative;overflow:hidden}
+.duration-row .bar .fill{height:100%;position:absolute;left:0;top:0;}
+.duration-row .bar .fill.cmn{width:18%;background:var(--warn)}
+.duration-row .bar .fill.shock{width:88%;background:var(--accent)}
+.duration-row .val{
+font-family:"Quantico",sans-serif;font-size:14px;font-weight:700;
+text-transform:uppercase;color:var(--ink);min-width:60px;text-align:right;
+}
+.duration-row .val.acc{color:var(--accent)}
+.duration-axis{
+display:flex;justify-content:space-between;
+margin-top:6px;padding-left:156px;
+font-family:"JetBrains Mono",monospace;font-size:10px;color:var(--ink-4);letter-spacing:0.1em;
+}
+
+.compare{background:var(--bg-2);border:1px solid var(--line);overflow:hidden}
+.compare-row{
+display:grid;grid-template-columns:1.5fr 1fr 1fr;
+align-items:center;padding:18px 28px;
+border-bottom:1px solid var(--line);gap:24px;
+}
+.compare-row:last-child{border-bottom:none}
+.compare-row.head{background:rgba(255,200,69,.04);border-bottom:1px solid var(--line-2)}
+.head .col{
+font-family:"Quantico",sans-serif;
+font-size:11px;letter-spacing:.18em;
+text-transform:uppercase;color:var(--ink-3);
+font-weight:700;
+}
+.head .col.shock{color:var(--accent)}
+.compare-row .col.k{color:var(--ink-2);font-size:14px;font-weight:400}
+.compare-row .col.cmn{
+font-family:"Quantico",sans-serif;color:var(--ink-3);
+font-size:13px;font-weight:700;text-transform:uppercase;
+display:inline-flex;align-items:center;gap:12px;
+}
+.compare-row .col.shock-val{
+font-family:"Quantico",sans-serif;color:var(--ink);
+font-size:13px;font-weight:700;text-transform:uppercase;
+display:inline-flex;align-items:center;gap:12px;
+}
+.ico-x{
+width:18px;height:18px;display:inline-flex;align-items:center;justify-content:center;
+font-size:10px;font-weight:700;
+border:1px solid var(--ink-4);color:var(--ink-3);
+flex-shrink:0;
+}
+.ico-c{
+width:18px;height:18px;display:inline-flex;align-items:center;justify-content:center;
+font-size:10px;font-weight:700;
+background:var(--accent);color:var(--bg);
+flex-shrink:0;
+}
+
+/* SOCIAL PROOF */
+.stats-grid{
+display:grid;grid-template-columns:repeat(2,1fr);
+gap:1px;background:var(--line);
+border:1px solid var(--line);
+margin-bottom:48px;
+}
+@media(min-width:768px){.stats-grid{grid-template-columns:repeat(4,1fr)}}
+.stat-cell{background:var(--bg);padding:32px 24px;position:relative;overflow:hidden}
+.stat-cell::before{
+content:"";position:absolute;top:0;left:0;width:24px;height:1px;background:var(--accent);
+}
+.stat-cell .v{
+font-family:"Quantico",sans-serif;
+font-weight:700;font-size:42px;
+color:var(--accent);line-height:0.9;
+letter-spacing:-0.03em;text-transform:uppercase;
+}
+.stat-cell .l{
+font-family:"Inter",sans-serif;
+font-size:11px;letter-spacing:.18em;
+text-transform:uppercase;color:var(--ink-3);
+margin-top:12px;font-weight:500;
+}
+.stars-line{
+display:flex;align-items:center;gap:12px;margin-bottom:24px;
+font-family:"Quantico",sans-serif;font-size:13px;
+text-transform:uppercase;letter-spacing:.16em;color:var(--ink-2);font-weight:700;
+}
+.stars{display:inline-flex;gap:2px;color:var(--accent);font-size:18px;letter-spacing:0}
+
+.testimonials{display:grid;grid-template-columns:1fr;gap:1px;background:var(--line);border:1px solid var(--line)}
+@media(min-width:768px){.testimonials{grid-template-columns:1fr 1fr}}
+@media(min-width:1024px){.testimonials{grid-template-columns:repeat(3,1fr)}}
+.testimonial{background:var(--bg);padding:32px 28px}
+.testimonial .num{
+font-family:"Quantico",sans-serif;font-weight:700;
+font-size:11px;letter-spacing:.18em;color:var(--accent);
+margin-bottom:18px;display:block;
+}
+.testimonial .stars{margin-bottom:16px}
+.testimonial p{font-size:15px;line-height:1.55;color:var(--ink);margin-bottom:24px;font-weight:400}
+.testimonial .who{padding-top:18px;border-top:1px solid var(--line)}
+.testimonial .tag{
+font-family:"Quantico",sans-serif;
+font-size:13px;font-weight:700;color:var(--ink);
+text-transform:uppercase;
+}
+.testimonial .role{
+font-family:"Inter",sans-serif;
+font-size:11px;letter-spacing:.14em;
+text-transform:uppercase;color:var(--ink-3);
+margin-top:5px;font-weight:500;
+}
+.top1{
+margin:48px auto 0;text-align:center;
+font-family:"Quantico",sans-serif;
+font-size:13px;letter-spacing:.18em;
+text-transform:uppercase;color:var(--accent);
+font-weight:700;
+}
+
+/* PARA QUIÉN */
+.disciplinas{
+display:grid;grid-template-columns:repeat(2,1fr);
+gap:1px;background:var(--line);border:1px solid var(--line);
+margin-bottom:56px;
+}
+@media(min-width:768px){.disciplinas{grid-template-columns:repeat(3,1fr)}}
+@media(min-width:1024px){.disciplinas{grid-template-columns:repeat(6,1fr)}}
+.discipline{background:var(--bg);padding:24px 18px;position:relative}
+.discipline .num{
+font-family:"Quantico",sans-serif;font-weight:700;
+font-size:11px;letter-spacing:.18em;
+color:var(--accent);display:block;margin-bottom:14px;
+}
+.discipline .title{
+font-family:"Quantico",sans-serif;font-weight:700;
+font-size:16px;letter-spacing:-0.01em;
+text-transform:uppercase;color:var(--ink);
+line-height:1;
+}
+.discipline .sub{
+font-family:"Inter",sans-serif;font-size:11px;
+color:var(--ink-3);margin-top:8px;font-weight:500;
+letter-spacing:.06em;text-transform:uppercase;
+}
+
+.for-you{display:grid;grid-template-columns:1fr;gap:1px;background:var(--line);border:1px solid var(--line)}
+@media(min-width:768px){.for-you{grid-template-columns:1fr 1fr}}
+.for-you .col{background:var(--bg);padding:36px 32px;position:relative}
+.for-you .col.is::before{
+content:"";position:absolute;top:0;left:0;width:48px;height:2px;background:var(--accent);
+}
+.for-you h3.display{font-size:22px;margin-bottom:24px;line-height:1}
+.for-you ul{display:flex;flex-direction:column;gap:14px}
+.for-you li{display:flex;align-items:flex-start;gap:14px;font-size:14.5px;color:var(--ink-2);line-height:1.5}
+.for-you .marker{
+flex-shrink:0;margin-top:3px;
+width:18px;height:18px;display:inline-flex;align-items:center;justify-content:center;
+font-size:11px;font-weight:700;
+}
+.for-you .marker.y{background:var(--accent);color:var(--bg)}
+.for-you .marker.n{border:1px solid var(--ink-4);color:var(--ink-3)}
+.for-you .footer-note{
+margin-top:24px;padding-top:18px;border-top:1px solid var(--line);
+font-size:13px;color:var(--ink-3);line-height:1.6;
+}
+
+/* PACKS */
+.scarcity{
+display:flex;align-items:center;gap:14px;
+border:1px solid var(--line-2);
+border-left:3px solid var(--accent);
+padding:16px 20px;
+margin-bottom:48px;
+font-family:"Quantico",sans-serif;
+font-size:12px;letter-spacing:.1em;
+text-transform:uppercase;color:var(--ink-2);
+font-weight:700;
+}
+.scarcity .ico-dot{width:6px;height:6px;background:var(--accent);border-radius:50%;flex-shrink:0;animation:pulse 2.4s ease-in-out infinite;box-shadow:0 0 10px var(--accent)}
+.scarcity strong{color:var(--accent);font-weight:700}
+
+.packs-grid{display:grid;grid-template-columns:1fr;gap:1px;background:var(--line);border:1px solid var(--line)}
+@media(min-width:768px){.packs-grid{grid-template-columns:1fr 1fr}}
+.pack-card{background:var(--bg);padding:36px 32px;display:flex;flex-direction:column;position:relative}
+.pack-img{
+aspect-ratio:1/1;
+margin:-36px -32px 28px;
+overflow:hidden;
+background:#000;
+border-bottom:1px solid var(--line);
+position:relative;
+}
+.pack-img::after{
+content:"";position:absolute;inset:0;
+background:radial-gradient(ellipse at 50% 60%,transparent 0%,rgba(0,0,0,.35) 100%);
+pointer-events:none;
+}
+.pack-img img{
+width:100%;height:100%;
+object-fit:cover;
+transition:transform .6s ease;
+}
+.pack-card:hover .pack-img img{transform:scale(1.04)}
+.pack-img-tag{
+position:absolute;top:14px;left:14px;
+background:rgba(0,0,0,.7);backdrop-filter:blur(8px);
+border:1px solid var(--line-2);
+padding:6px 10px;
+font-family:"Quantico",sans-serif;font-size:9px;
+letter-spacing:.2em;text-transform:uppercase;color:var(--ink-2);
+font-weight:700;z-index:2;
+}
+/* URGENCY PANEL */
+.urgency{
+margin-bottom:48px;
+border:1px solid var(--line);
+background:var(--bg-2);
+padding:24px 28px;
+position:relative;
+overflow:hidden;
+}
+.urgency::before{
+content:"";position:absolute;top:0;left:0;width:3px;height:100%;background:var(--accent);
+box-shadow:0 0 24px rgba(255,200,69,.4);
+}
+.urgency-row{
+display:flex;align-items:center;justify-content:space-between;
+gap:18px;flex-wrap:wrap;margin-bottom:16px;
+}
+.urgency-tag{
+display:inline-flex;align-items:center;gap:10px;
+font-family:"Quantico",sans-serif;font-size:10px;
+letter-spacing:.24em;text-transform:uppercase;color:var(--ink-3);
+font-weight:700;
+}
+.urgency-tag .live{
+display:inline-flex;align-items:center;gap:6px;
+color:var(--accent);
+}
+.urgency-tag .live .blink{
+width:6px;height:6px;border-radius:50%;background:var(--accent);
+box-shadow:0 0 10px var(--accent);
+animation:blink 1.4s ease-in-out infinite;
+}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:.3}}
+.urgency-headline{
+font-family:"Quantico",sans-serif;
+font-size:clamp(20px,2.4vw,28px);
+font-weight:700;
+text-transform:uppercase;
+letter-spacing:-0.015em;
+color:var(--ink);
+line-height:1.05;
+}
+.urgency-headline .acc{color:var(--accent)}
+.progress-wrap{margin:18px 0 12px}
+.progress-bar{
+height:8px;background:var(--line);position:relative;overflow:hidden;
+}
+.progress-bar .fill{
+position:absolute;left:0;top:0;height:100%;
+width:84%;background:var(--accent);
+box-shadow:0 0 16px rgba(255,200,69,.5);
+animation:progressGrow 1.4s ease-out;
+}
+@keyframes progressGrow{from{width:0}to{width:84%}}
+.progress-bar .pct{
+position:absolute;right:8px;top:50%;transform:translateY(-50%);
+font-family:"Quantico",sans-serif;font-size:10px;font-weight:700;
+color:var(--bg);letter-spacing:.1em;z-index:2;
+}
+.urgency-meta{
+display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap;
+font-family:"Inter",sans-serif;font-size:12px;
+color:var(--ink-3);letter-spacing:.04em;font-weight:500;
+}
+.urgency-meta strong{color:var(--ink);font-weight:700}
+.urgency-meta .acc{color:var(--accent);font-weight:700}
+.pack-card.featured{background:var(--bg-2)}
+.pack-card.featured::before{
+content:"";position:absolute;top:0;left:0;right:0;height:3px;background:var(--accent);z-index:3;
+}
+.pack-card .badge{
+position:absolute;top:14px;right:14px;
+background:var(--accent);color:var(--bg);
+padding:6px 12px;
+font-family:"Quantico",sans-serif;font-size:10px;font-weight:700;
+letter-spacing:.2em;text-transform:uppercase;
+z-index:4;
+box-shadow:0 4px 16px rgba(0,0,0,.4);
+}
+.pack-card .label{
+font-family:"Quantico",sans-serif;font-weight:700;
+font-size:11px;letter-spacing:.22em;
+color:var(--ink-3);margin-bottom:18px;display:block;
+}
+.pack-card.featured{padding-top:36px}
+.pack-card.featured .label{color:var(--accent)}
+.pack-card h3.display{font-size:clamp(24px,2.4vw,30px);margin-bottom:20px;line-height:1}
+.pack-card .price-row{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;margin-bottom:18px}
+.pack-card .price{
+font-family:"Quantico",sans-serif;
+font-size:42px;font-weight:700;color:var(--ink);
+line-height:1;letter-spacing:-0.03em;
+}
+.pack-card.featured .price{color:var(--accent)}
+.pack-card .price-old{
+font-family:"Quantico",sans-serif;font-size:18px;
+color:var(--ink-4);text-decoration:line-through;font-weight:700;
+}
+.pack-card .save{
+font-family:"Quantico",sans-serif;font-size:10px;
+font-weight:700;letter-spacing:.18em;text-transform:uppercase;
+color:var(--bg);background:var(--accent);
+padding:5px 9px;
+}
+.pack-card .price-mini{
+font-family:"Inter",sans-serif;font-size:12px;
+color:var(--ink-3);margin-top:4px;font-weight:500;
+letter-spacing:.04em;
+}
+.pack-card .items{display:flex;flex-direction:column;gap:11px;margin-top:24px;margin-bottom:32px}
+.pack-card .items li{display:flex;align-items:flex-start;gap:14px;font-size:14px;color:var(--ink-2);line-height:1.4}
+.pack-card .items li::before{content:"";display:inline-block;width:12px;height:1px;background:var(--accent);margin-top:10px;flex-shrink:0}
+
+.stack{
+background:rgba(255,200,69,.03);
+border:1px solid var(--line);
+border-left:2px solid var(--accent);
+padding:20px 22px;
+margin-bottom:24px;
+font-family:"Inter",sans-serif;
+}
+.stack .stack-head{
+display:flex;justify-content:space-between;
+font-family:"Quantico",sans-serif;
+font-size:10px;letter-spacing:.22em;
+text-transform:uppercase;color:var(--ink-3);
+margin-bottom:14px;font-weight:700;
+}
+.stack .stack-row{
+display:flex;justify-content:space-between;
+font-size:13px;padding:7px 0;color:var(--ink-2);
+border-bottom:1px solid var(--line);
+}
+.stack .stack-row:last-of-type{border-bottom:none}
+.stack .stack-row.muted{color:var(--ink-4)}
+.stack .stack-row .v{
+font-family:"Quantico",sans-serif;
+color:var(--ink);font-weight:700;
+}
+.stack .totals{margin-top:12px;padding-top:14px;border-top:1px solid var(--line-2)}
+.stack .total{display:flex;justify-content:space-between;font-size:13px;color:var(--ink-2);font-weight:500}
+.stack .total.you{color:var(--accent);margin-top:6px;font-weight:700}
+.stack .total.you .v{color:var(--accent);font-size:18px;font-weight:700}
+
+.pack-card .cta-bottom{margin-top:auto}
+.pack-card .pack-mini{
+margin-top:12px;text-align:center;
+font-family:"Inter",sans-serif;font-size:10px;
+letter-spacing:.16em;text-transform:uppercase;color:var(--ink-3);
+font-weight:500;
+}
+
+.trust-line{
+display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:12px 28px;
+margin:36px auto 0;
+font-family:"Inter",sans-serif;font-size:11px;
+letter-spacing:.14em;text-transform:uppercase;color:var(--ink-3);
+max-width:900px;font-weight:500;
+}
+.trust-line span{display:inline-flex;align-items:center;gap:8px}
+.trust-line .acc{color:var(--accent)}
+.trust-line .sep{color:var(--ink-4)}
+
+.guarantee{
+margin:48px 0 0;
+border:1px solid var(--accent);
+background:var(--accent-soft);
+padding:36px 32px;
+position:relative;
+}
+.guarantee::before{
+content:"";position:absolute;top:-1px;left:-1px;width:48px;height:1px;background:var(--accent);
+}
+.guarantee::after{
+content:"";position:absolute;bottom:-1px;right:-1px;width:48px;height:1px;background:var(--accent);
+}
+.guarantee .seal{
+display:inline-flex;align-items:center;gap:10px;
+font-family:"Quantico",sans-serif;font-size:11px;
+letter-spacing:.22em;text-transform:uppercase;
+color:var(--accent);font-weight:700;margin-bottom:14px;
+}
+.guarantee .seal::before{
+content:"";width:24px;height:1px;background:var(--accent);
+}
+.guarantee-head h3.display{font-size:clamp(22px,2.2vw,28px);line-height:1.1;margin-bottom:14px}
+.guarantee p{font-size:14.5px;line-height:1.65;color:var(--ink-2);font-weight:400;max-width:680px}
+.guarantee p strong{color:var(--ink);font-weight:600}
+
+/* FAQ */
+.faq{border:1px solid var(--line);background:var(--bg-2)}
+.faq-item{border-bottom:1px solid var(--line)}
+.faq-item:last-child{border-bottom:none}
+.faq-item summary{
+cursor:pointer;display:flex;align-items:flex-start;
+gap:24px;padding:22px 28px;list-style:none;
+transition:background .25s;
+}
+.faq-item summary::-webkit-details-marker{display:none}
+.faq-item summary:hover{background:rgba(255,200,69,.025)}
+.faq-item[open] summary{background:rgba(255,200,69,.04)}
+.faq-num{
+font-family:"Quantico",sans-serif;font-weight:700;
+font-size:13px;letter-spacing:.18em;color:var(--accent);
+min-width:34px;
+}
+.faq-q{flex:1;font-size:15px;font-weight:500;color:var(--ink);line-height:1.4}
+.faq-toggle{
+font-family:"Quantico",sans-serif;
+color:var(--accent);font-weight:700;font-size:18px;
+transition:transform .35s ease;
+}
+.faq-item[open] .faq-toggle{transform:rotate(45deg)}
+.faq-a{padding:0 28px 22px 86px;font-size:14px;line-height:1.7;color:var(--ink-2)}
+.faq-cta{margin-top:36px;text-align:center;font-size:14px;color:var(--ink-3)}
+.faq-cta a{color:var(--accent);border-bottom:1px solid var(--accent);padding-bottom:2px}
+.faq-cta a:hover{opacity:.7}
+
+/* CIERRE */
+.cierre{padding:96px 0 112px;border-top:1px solid var(--line)}
+.cierre h2.display{
+font-size:clamp(48px,7.5vw,116px);
+line-height:0.94;
+margin-bottom:32px;
+text-align:left;
+max-width:1100px;
+letter-spacing:-0.035em;
+}
+.cierre h2 .dim{color:var(--ink-3)}
+.cierre h2 .acc{color:var(--accent)}
+.cierre p{
+max-width:540px;
+font-size:16px;line-height:1.55;
+color:var(--ink-2);margin-bottom:32px;font-weight:400;
+}
+.cierre .cta-row{display:flex;flex-wrap:wrap;gap:14px;align-items:center}
+.cierre .tag{
+margin-left:18px;
+font-family:"Quantico",sans-serif;font-size:11px;
+letter-spacing:.22em;text-transform:uppercase;
+color:var(--accent);font-weight:700;
+}
+.cierre-stats{
+margin-top:64px;
+display:grid;grid-template-columns:repeat(2,1fr);
+gap:1px;background:var(--line);border:1px solid var(--line);
+}
+@media(min-width:768px){.cierre-stats{grid-template-columns:repeat(4,1fr)}}
+.cierre-stats .cell{background:var(--bg);padding:28px 22px}
+.cierre-stats .cell .v{
+font-family:"Quantico",sans-serif;font-weight:700;
+font-size:42px;color:var(--accent);line-height:0.9;
+letter-spacing:-0.03em;text-transform:uppercase;
+}
+.cierre-stats .cell .l{
+font-family:"Inter",sans-serif;font-size:11px;
+letter-spacing:.18em;text-transform:uppercase;
+color:var(--ink-3);margin-top:10px;font-weight:500;
+}
+
+/* FOOTER */
+footer{padding:48px 0 32px;border-top:1px solid var(--line)}
+.footer-grid{display:grid;grid-template-columns:1fr;gap:24px;align-items:end}
+@media(min-width:768px){.footer-grid{grid-template-columns:1fr auto}}
+.footer-logo{
+font-family:"Quantico",sans-serif;font-weight:700;
+font-size:24px;letter-spacing:0.04em;color:var(--ink);
+text-transform:uppercase;line-height:1;margin-bottom:10px;
+}
+.footer-tag{
+font-family:"Inter",sans-serif;font-size:12px;
+letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3);
+max-width:480px;font-weight:500;
+}
+.footer-links{
+display:flex;flex-wrap:wrap;gap:8px 22px;
+font-family:"Inter",sans-serif;font-size:11px;
+letter-spacing:.12em;text-transform:uppercase;color:var(--ink-3);
+font-weight:500;
+}
+.footer-links a:hover{color:var(--accent)}
+.footer-bottom{
+margin-top:36px;padding-top:24px;
+border-top:1px solid var(--line);
+display:flex;flex-wrap:wrap;justify-content:space-between;gap:16px;
+font-family:"Inter",sans-serif;font-size:10px;
+letter-spacing:.12em;text-transform:uppercase;color:var(--ink-4);
+font-weight:500;
+}
+
+/* STICKY BAR */
+.sticky-bar{
+position:fixed;bottom:0;left:0;right:0;z-index:50;
+border-top:1px solid var(--line-2);
+background:rgba(10,8,7,.94);
+backdrop-filter:blur(16px);
+-webkit-backdrop-filter:blur(16px);
+}
+.sticky-inner{
+max-width:1280px;margin:0 auto;
+padding:11px 24px;
+display:flex;flex-direction:column;align-items:center;justify-content:space-between;
+gap:10px;
+}
+@media(min-width:768px){.sticky-inner{flex-direction:row;padding:11px 48px}}
+.sticky-text{
+font-family:"Inter",sans-serif;
+font-size:13px;
+color:var(--ink);text-align:center;font-weight:500;
+}
+@media(min-width:768px){.sticky-text{text-align:left}}
+.sticky-text .acc{color:var(--accent);font-weight:700}
+.sticky-text .dim{color:var(--ink-3)}
+.sticky-bar .btn{padding:10px 18px;font-size:11px;letter-spacing:.16em}
+
+/* SELECTION */
+::selection{background:var(--accent);color:var(--bg)}
+
+/* MOBILE TUNING */
+@media(max-width:480px){
+.hero-visual .ph-floating{padding:9px 12px}
+.hero-visual .ph-floating .v{font-size:16px}
+.hero-visual .ph-floating .l{font-size:8px}
+.ph-tl{top:12px;right:12px}
+.ph-bl{bottom:42px;left:12px}
+.ph-br{bottom:42px;right:12px}
+.data-line{font-size:8px;letter-spacing:.1em;left:12px;right:12px}
+.card,.stat-card,.pack-card,.testimonial,.discipline,.for-you .col,.guarantee,.energy-chart{padding:24px 20px}
+.faq-item summary{padding:18px 18px}
+.faq-a{padding:0 18px 20px 56px}
+.compare-row{padding:14px 18px;gap:10px}
+.spec-row,.spec-head,.spec-cta{padding:14px 20px}
+.duration-row{grid-template-columns:90px 1fr 50px;gap:10px}
+.duration-axis{padding-left:106px}
+}
+</style>
+</head>
+<body>
+
+<!-- ─────────────────────────── MARQUEE -->
+<div class="marquee">
+<div class="marquee-track">
+<span class="it">SIN AZÚCAR<span class="sep">/</span></span>
+<span class="it">SIN GLUTEN<span class="sep">/</span></span>
+<span class="it">SIN LÁCTEOS<span class="sep">/</span></span>
+<span class="it">100% CAFÉ TOSTADO<span class="sep">/</span></span>
+<span class="it"><span class="star">★</span> TESTEADO POR LA UBA<span class="sep">/</span></span>
+<span class="it">HECHO EN ARGENTINA<span class="sep">/</span></span>
+<span class="it">SIN AZÚCAR<span class="sep">/</span></span>
+<span class="it">SIN GLUTEN<span class="sep">/</span></span>
+<span class="it">SIN LÁCTEOS<span class="sep">/</span></span>
+<span class="it">100% CAFÉ TOSTADO<span class="sep">/</span></span>
+<span class="it"><span class="star">★</span> TESTEADO POR LA UBA<span class="sep">/</span></span>
+<span class="it">HECHO EN ARGENTINA<span class="sep">/</span></span>
+</div>
+</div>
+
+<!-- ─────────────────────────── HERO -->
+<section class="wrap hero-wrap">
+<div class="hero">
+<div>
+<div class="hero-eyebrow-line">
+<span class="dot"></span>
+<span>Pre-entreno natural · 300 mg cafeína</span>
+</div>
+<h1 class="display hero-title">
+El primer<br><span class="acc-word">café pre-entreno</span><br>hecho en Argentina.
+</h1>
+<div class="hero-sub-mono">
+<b>300 MG</b> cafeína natural <span class="sep">/</span> <b>+ activos</b> de performance <span class="sep">/</span> <b>cero</b> crash
+</div>
+<p class="hero-micro">Cafeína natural potenciada con betaína, taurina, teacrina y electrolitos. Más fuerza, más aguante, cero crash. El pre-entreno más estudiado de Argentina.</p>
+<div class="ctas">
+<a href="#packs" class="btn btn-primary">Pedí mi primer pack <span class="arrow">→</span></a>
+<a href="#ciencia" class="btn btn-ghost">Ver la ciencia</a>
+</div>
+<div class="trust-row">
+<span><span class="star">★★★★★</span> 4.8 (847)</span>
+<span class="sep">/</span>
+<span>+22.000 vendidos</span>
+<span class="sep">/</span>
+<span>Envío gratis +$75k</span>
+<span class="sep">/</span>
+<span>Garantía 7 días</span>
+</div>
+</div>
+
+<!-- HERO VISUAL -->
+<div class="hero-visual">
+<img class="hero-img" src="hero-shock.jpg" alt="SHOCK Coffee — brazo robótico industrial sosteniendo el pack" onerror="this.style.opacity=.3">
+<div class="ph-floating ph-tl featured">
+<span class="v">300mg</span>
+<span class="l">Cafeína / taza</span>
+</div>
+<div class="ph-floating ph-bl">
+<span class="v">pH 5.2</span>
+<span class="l">−40% acidez</span>
+</div>
+<div class="ph-floating ph-br">
+<span class="v">6–8h</span>
+<span class="l">Energía</span>
+</div>
+<div class="data-line">
+<span><span class="pulse-dot"></span>SCAN_ID 0xS-300</span>
+<span>BATCH 2024 / UBA</span>
+<span>v.1.0</span>
+</div>
+</div>
+</div>
+</section>
+
+<!-- ─────────────────────────── PROBLEMA -->
+<section class="wrap section">
+<div class="section-marker">[ <span class="acc">s.01</span> / La realidad del fitness ]</div>
+<div class="section-header">
+<span class="eyebrow">El problema</span>
+<h2 class="display">Lo que llamás 'pre-entreno' es <span class="accent">estrés químico</span> vendido como energía.</h2>
+<p class="sub">Si cuidás lo que comés, ¿por qué lo arruinás 30 minutos antes del entreno?</p>
+</div>
+
+<!-- ENERGY CURVE CHART -->
+<div class="energy-chart">
+<div class="chart-head">
+<div>
+<span class="lbl">Visualización · Energía durante el entreno</span>
+<h4>Pre-entreno común vs SHOCK / 8 horas</h4>
+</div>
+<div class="legend">
+<span><span class="swatch cmn"></span>Pre-entreno común</span>
+<span><span class="swatch shock"></span>SHOCK Coffee</span>
+</div>
+</div>
+<svg viewBox="0 0 800 220" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+<!-- grid lines -->
+<line x1="0" y1="40" x2="800" y2="40" stroke="rgba(242,239,233,0.06)" stroke-width="1"/>
+<line x1="0" y1="100" x2="800" y2="100" stroke="rgba(242,239,233,0.06)" stroke-width="1"/>
+<line x1="0" y1="160" x2="800" y2="160" stroke="rgba(242,239,233,0.06)" stroke-width="1"/>
+<!-- x axis labels -->
+<g font-family="JetBrains Mono, monospace" font-size="10" fill="rgba(242,239,233,0.32)" letter-spacing="1.5">
+<text x="0" y="210">0H</text>
+<text x="100" y="210">1H</text>
+<text x="200" y="210">2H</text>
+<text x="300" y="210">3H</text>
+<text x="400" y="210">4H</text>
+<text x="500" y="210">5H</text>
+<text x="600" y="210">6H</text>
+<text x="700" y="210">7H</text>
+<text x="775" y="210">8H</text>
+</g>
+<!-- common pre-workout: spike then crash -->
+<path d="M 0,160 L 50,140 L 100,40 L 150,30 L 200,90 L 250,150 L 300,180 L 400,190 L 500,192 L 600,193 L 700,193 L 800,193" fill="none" stroke="#E85A4F" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
+<!-- shock: gradual rise sustained -->
+<path d="M 0,160 L 80,120 L 160,80 L 240,55 L 320,42 L 400,38 L 480,42 L 560,55 L 640,75 L 720,105 L 800,135" fill="none" stroke="#FFC845" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/>
+<!-- area fill under shock -->
+<path d="M 0,160 L 80,120 L 160,80 L 240,55 L 320,42 L 400,38 L 480,42 L 560,55 L 640,75 L 720,105 L 800,135 L 800,200 L 0,200 Z" fill="url(#shockGrad)" opacity="0.15"/>
+<defs>
+<linearGradient id="shockGrad" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0%" stop-color="#FFC845"/>
+<stop offset="100%" stop-color="#FFC845" stop-opacity="0"/>
+</linearGradient>
+</defs>
+<!-- crash annotation -->
+<g font-family="Quantico, sans-serif" font-size="10" fill="#E85A4F" letter-spacing="1.4" font-weight="700" text-transform="uppercase">
+<text x="170" y="20">CRASH AT 90 MIN</text>
+<line x1="160" y1="25" x2="155" y2="35" stroke="#E85A4F" stroke-width="1"/>
+</g>
+<g font-family="Quantico, sans-serif" font-size="10" fill="#FFC845" letter-spacing="1.4" font-weight="700">
+<text x="380" y="22">SHOCK / 6+ HRS</text>
+</g>
+</svg>
+</div>
+
+<div class="grid-2">
+<div class="card">
+<span class="num">01 / Composición</span>
+<h3 class="display">Ingredientes que ni un químico entiende</h3>
+<p>La mayoría de los pre-workout tienen colorantes, edulcorantes y compuestos que no podés pronunciar. Tu cuerpo tampoco.</p>
+</div>
+<div class="card">
+<span class="num">02 / Estrés</span>
+<h3 class="display">Cafeína sintética que dispara cortisol</h3>
+<p>Esa "energía" es estrés químico. Te acelera, te pone nervioso, te deja temblando. No es rendimiento, es ansiedad.</p>
+</div>
+<div class="card">
+<span class="num">03 / Ciclo</span>
+<h3 class="display">Pico a los 30, desplome a los 90</h3>
+<p>Subida violenta, bajada peor. Empezás como bestia, terminás roto. El ciclo que arruina tu día entero.</p>
+</div>
+<div class="card">
+<span class="num">04 / Estómago</span>
+<h3 class="display">Estómago destrozado antes del primer set</h3>
+<p>Acidez, náuseas, malestar. No podés rendir si tu cuerpo está pidiendo auxilio.</p>
+</div>
+</div>
+
+<div class="stat-highlight">
+<div>
+<div class="stat-num">73%</div>
+<div class="bar"></div>
+</div>
+<div>
+<p class="stat-text">de los atletas dice que los pre-entrenos comunes les dan <strong>menos de 2 horas de energía útil</strong>. No es tu culpa — los suplementos comerciales están optimizados para el marketing, no para tu rendimiento.</p>
+</div>
+</div>
+</section>
+
+<!-- ─────────────────────────── SOLUCIÓN -->
+<section class="wrap section" style="position:relative;overflow:hidden">
+<!-- molecule decor -->
+<div class="molecule-decor" aria-hidden="true">
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+<g fill="none" stroke="#FFC845" stroke-width="1.5">
+<!-- caffeine schematic -->
+<circle cx="100" cy="100" r="56" stroke-opacity="0.4"/>
+<circle cx="100" cy="100" r="38"/>
+<circle cx="60" cy="80" r="6" fill="#FFC845"/>
+<circle cx="140" cy="80" r="6" fill="#FFC845"/>
+<circle cx="100" cy="40" r="6" fill="#FFC845"/>
+<circle cx="60" cy="120" r="6" fill="#FFC845"/>
+<circle cx="140" cy="120" r="6" fill="#FFC845"/>
+<circle cx="100" cy="160" r="6" fill="#FFC845"/>
+<line x1="60" y1="80" x2="100" y2="40"/>
+<line x1="100" y1="40" x2="140" y2="80"/>
+<line x1="140" y1="80" x2="140" y2="120"/>
+<line x1="140" y1="120" x2="100" y2="160"/>
+<line x1="100" y1="160" x2="60" y2="120"/>
+<line x1="60" y1="120" x2="60" y2="80"/>
+</g>
+</svg>
+</div>
+
+<div class="section-marker">[ <span class="acc">s.02</span> / La solución fitness ]</div>
+<div class="section-header">
+<span class="eyebrow">La fórmula</span>
+<h2 class="display">Esto sí es un pre-entreno. <span class="accent">Café de verdad, diseñado por ciencia.</span></h2>
+<p class="sub">Café de especialidad tostado a baja temperatura con 300 mg de cafeína natural, potenciado con betaína, taurina, teacrina y electrolitos. Cada compuesto micronizado e integrado en el molido.</p>
+</div>
+
+<div class="grid-3">
+<div class="stat-card">
+<div class="top">
+<span class="num">01 / Cafeína + Teacrina</span>
+<div>
+<div class="kpi">300mg</div>
+<div class="kpi-label">Por taza</div>
+</div>
+</div>
+<h3 class="display">Cafeína natural + teacrina, liberación gradual</h3>
+<p>300 mg de cafeína natural liberados durante 6 a 8 horas, potenciados con 200 mg de teacrina: más envión, más limpio, sin tolerancia ni bajón.</p>
+</div>
+<div class="stat-card">
+<div class="top">
+<span class="num">02 / Fuerza</span>
+<div>
+<div class="kpi">1,5g</div>
+<div class="kpi-label">Betaína</div>
+</div>
+</div>
+<h3 class="display">Más fuerza y repeticiones</h3>
+<p>Betaína (1,5 g) para más potencia y repeticiones, y taurina (1 g) para resistir la fatiga y cortar los calambres. Rendís hasta la última serie.</p>
+</div>
+<div class="stat-card">
+<div class="top">
+<span class="num">03 / Electrolitos</span>
+<div>
+<div class="kpi">pH 5.2</div>
+<div class="kpi-label">Acidez baja</div>
+</div>
+</div>
+<h3 class="display">Electrolitos + estómago tranquilo</h3>
+<p>Sodio, potasio y magnesio reponen lo que transpirás y cortan los calambres. Tostado lento: 40% menos acidez, apto para gastritis y reflujo.</p>
+</div>
+</div>
+</section>
+
+<!-- ─────────────────────────── CIENCIA / SPEC SHEET -->
+<section id="ciencia" class="wrap section">
+<div class="section-marker">[ <span class="acc">s.03</span> / Análisis independiente ]</div>
+<div class="section-header">
+<span class="eyebrow">La ciencia detrás</span>
+<h2 class="display">No es magia. <span class="accent">Es bioquímica.</span></h2>
+<p class="sub">Cada decisión está respaldada por análisis independientes. No hay marketing que tape una mala fórmula.</p>
+</div>
+
+<div class="spec-wrapper">
+<div class="spec-side">
+<div class="verified-badge">
+<span class="check">✓</span>
+TESTEADO POR LA UBA
+</div>
+<h3 class="display">Análisis<br>independiente.</h3>
+<p>Mandamos SHOCK a la Facultad de Ciencias Exactas y Naturales de la Universidad de Buenos Aires. Los resultados confirmaron todo lo que decimos.</p>
+<p style="color:var(--ink-3);font-size:13px">UBA · Cs. Exactas y Naturales · 2024</p>
+</div>
+
+<div class="spec">
+<div class="spec-head">
+<span class="lbl">/ Especificaciones técnicas</span>
+<span class="meta">LOT.2024-AA</span>
+</div>
+<div class="spec-row"><span class="k">Cafeína por taza</span><span class="val acc">300 mg</span></div>
+<div class="spec-row"><span class="k">Betaína (trimetilglicina)</span><span class="val">1,5 g</span></div>
+<div class="spec-row"><span class="k">Taurina</span><span class="val">1 g</span></div>
+<div class="spec-row"><span class="k">Teacrina</span><span class="val">200 mg</span></div>
+<div class="spec-row"><span class="k">Electrolitos</span><span class="val">Na · K · Mg</span></div>
+<div class="spec-row"><span class="k">Origen</span><span class="val">Argentina</span></div>
+<div class="spec-row"><span class="k">Categoría</span><span class="val">Café de especialidad</span></div>
+<div class="spec-row"><span class="k">Liberación</span><span class="val">Gradual / 6–8 h</span></div>
+<div class="spec-row"><span class="k">pH</span><span class="val acc">5.2</span></div>
+<div class="spec-row"><span class="k">Acidez vs comercial</span><span class="val">−40%</span></div>
+<div class="spec-row"><span class="k">Edulcorantes</span><span class="val">0</span></div>
+<div class="spec-row"><span class="k">Colorantes</span><span class="val">0</span></div>
+<div class="spec-row"><span class="k">Tostado</span><span class="val">Lento / baja temp.</span></div>
+<div class="spec-row"><span class="k">Análisis independiente</span><span class="val acc">UBA / 2024</span></div>
+<div class="spec-cta">
+<a href="https://drive.google.com/file/d/1yugzNrY8MLaCxgC1BP04J1jD93WH0gDE/view" target="_blank" rel="noopener">
+Ver el estudio completo
+<span class="arrow">→</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+
+<!-- ─────────────────────────── COMPARATIVA -->
+<section class="wrap section">
+<div class="section-marker">[ <span class="acc">s.04</span> / La diferencia es clara ]</div>
+<div class="section-header">
+<span class="eyebrow">Comparativa</span>
+<h2 class="display">Pre-entreno común <span class="accent">vs SHOCK.</span></h2>
+<p class="sub">No todos los combustibles son iguales. Tu cuerpo nota la diferencia.</p>
+</div>
+
+<!-- DURATION VISUAL -->
+<div class="duration-viz">
+<div class="head">
+<span class="lbl">/ Duración de energía útil</span>
+<span class="lbl" style="color:var(--ink-4)">Horas reales reportadas</span>
+</div>
+<div class="duration-row">
+<div class="label">Pre-entreno común</div>
+<div class="bar"><div class="fill cmn"></div></div>
+<div class="val">1–2h</div>
+</div>
+<div class="duration-row">
+<div class="label shock">SHOCK</div>
+<div class="bar"><div class="fill shock"></div></div>
+<div class="val acc">6–8h</div>
+</div>
+<div class="duration-axis">
+<span>0h</span><span>2h</span><span>4h</span><span>6h</span><span>8h</span>
+</div>
+</div>
+
+<div class="compare">
+<div class="compare-row head">
+<div class="col">/ Característica</div>
+<div class="col">Pre-entreno común</div>
+<div class="col shock">SHOCK</div>
+</div>
+<div class="compare-row">
+<div class="col k">Cafeína por dosis</div>
+<div class="col cmn"><span class="ico-x">✕</span>150–200 mg sintética</div>
+<div class="col shock-val"><span class="ico-c">✓</span>300 mg natural</div>
+</div>
+<div class="compare-row">
+<div class="col k">Duración de energía</div>
+<div class="col cmn"><span class="ico-x">✕</span>1–2 h</div>
+<div class="col shock-val"><span class="ico-c">✓</span>6–8 h</div>
+</div>
+<div class="compare-row">
+<div class="col k">Crash post-entreno</div>
+<div class="col cmn"><span class="ico-x">✕</span>Fuerte</div>
+<div class="col shock-val"><span class="ico-c">✓</span>Ninguno</div>
+</div>
+<div class="compare-row">
+<div class="col k">Ingredientes artificiales</div>
+<div class="col cmn"><span class="ico-x">✕</span>Muchos</div>
+<div class="col shock-val"><span class="ico-c">✓</span>Cero</div>
+</div>
+<div class="compare-row">
+<div class="col k">Acidez estomacal</div>
+<div class="col cmn"><span class="ico-x">✕</span>Alta</div>
+<div class="col shock-val"><span class="ico-c">✓</span>Baja / pH 5.2</div>
+</div>
+<div class="compare-row">
+<div class="col k">Colorantes / saborizantes</div>
+<div class="col cmn"><span class="ico-x">✕</span>Sí</div>
+<div class="col shock-val"><span class="ico-c">✓</span>No</div>
+</div>
+<div class="compare-row">
+<div class="col k">Compuestos de performance</div>
+<div class="col cmn"><span class="ico-x">✕</span>Solo estimulante</div>
+<div class="col shock-val"><span class="ico-c">✓</span>Betaína · taurina · teacrina</div>
+</div>
+<div class="compare-row">
+<div class="col k">Electrolitos</div>
+<div class="col cmn"><span class="ico-x">✕</span>No</div>
+<div class="col shock-val"><span class="ico-c">✓</span>Sodio · potasio · magnesio</div>
+</div>
+</div>
+</section>
+
+<!-- ─────────────────────────── SOCIAL PROOF -->
+<section class="wrap section">
+<div class="section-marker">[ <span class="acc">s.05</span> / Prueba social ]</div>
+<div class="section-header">
+<span class="eyebrow">Lo que dicen los atletas</span>
+<div class="stars-line">
+<span class="stars">★★★★★</span>
+<span>4.8 / 847 reviews verificadas</span>
+</div>
+<h2 class="display">No nos creas a nosotros. <span class="accent">Escuchá a los que ya probaron.</span></h2>
+</div>
+
+<div class="stats-grid">
+<div class="stat-cell"><div class="v">4.8</div><div class="l">Rating promedio</div></div>
+<div class="stat-cell"><div class="v">847</div><div class="l">Reviews verificadas</div></div>
+<div class="stat-cell"><div class="v">94%</div><div class="l">Volverían a comprar</div></div>
+<div class="stat-cell"><div class="v">22k+</div><div class="l">Packs vendidos</div></div>
+</div>
+
+<div class="testimonials">
+<div class="testimonial">
+<span class="num">01</span>
+<span class="stars">★★★★★</span>
+<p>"Tengo gastritis y pensé que nunca iba a poder tomar pre-entreno. Con SHOCK cero problemas. Y la energía es de otro planeta. Mis PRs lo agradecen."</p>
+<div class="who"><div class="tag">Tomás V.</div><div class="role">Powerlifter / Gym Olimpo</div></div>
+</div>
+<div class="testimonial">
+<span class="num">02</span>
+<span class="stars">★★★★★</span>
+<p>"Antes tomaba 3 cafés y un pre-workout. Vivía acelerado, irritable. Ahora una taza de SHOCK al despertar y otra antes de entrenar. Listo. Recuperé las mañanas y, sin querer, también recuperé un poco de paciencia."</p>
+<div class="who"><div class="tag">Diego F.</div><div class="role">Functional Training / Box Norte</div></div>
+</div>
+<div class="testimonial">
+<span class="num">03</span>
+<span class="stars">★★★★★</span>
+<p>"Probé mil pre-entrenos y todos me dejaban temblando o con acidez. SHOCK es otra cosa. Energía real, sin la porquería de siempre. Lo tomo 30 min antes del WOD y rindo como bestia."</p>
+<div class="who"><div class="tag">Martín R.</div><div class="role">CrossFit / Box La Plata</div></div>
+</div>
+<div class="testimonial">
+<span class="num">04</span>
+<span class="stars">★★★★★</span>
+<p>"Se lo recomiendo a todos mis alumnos que quieren algo natural. La diferencia se nota en el entreno: más foco, más ganas, sin el bajón de las 2 horas. Y lo mejor, es 100% natural."</p>
+<div class="who"><div class="tag">Lucía M.</div><div class="role">Personal Trainer / Freelance</div></div>
+</div>
+<div class="testimonial">
+<span class="num">05</span>
+<span class="stars">★★★★★</span>
+<p>"Lo tomo antes de mis entrenamientos largos. 6-8km sin sentir el cansancio mental. Y cuando termino no estoy destruida como con otros pre-workout. Game changer total."</p>
+<div class="who"><div class="tag">Carolina S.</div><div class="role">Runner / Running Team BA</div></div>
+</div>
+<div class="testimonial">
+<span class="num">06</span>
+<span class="stars">★★★★★</span>
+<p>"Necesitaba energía para mis clases de la mañana pero sin los nervios de los pre-entrenos comunes. SHOCK me da esa energía limpia y constante. Perfecto."</p>
+<div class="who"><div class="tag">Valentina P.</div><div class="role">Yoga & HIIT / Studio Zen</div></div>
+</div>
+</div>
+
+<div class="top1">★ Top 1% de productos mejor valorados en Argentina</div>
+</section>
+
+<!-- ─────────────────────────── PARA QUIÉN -->
+<section class="wrap section">
+<div class="section-marker">[ <span class="acc">s.06</span> / Compatibilidad ]</div>
+<div class="section-header">
+<span class="eyebrow">¿Es para vos?</span>
+<h2 class="display">SHOCK es para <span class="accent">atletas que hacen.</span></h2>
+</div>
+
+<div class="disciplinas">
+<div class="discipline"><span class="num">01</span><div class="title">Powerlifters</div><div class="sub">PRs sin químicos</div></div>
+<div class="discipline"><span class="num">02</span><div class="title">CrossFitters</div><div class="sub">WODs explosivos</div></div>
+<div class="discipline"><span class="num">03</span><div class="title">Runners</div><div class="sub">Resistencia real</div></div>
+<div class="discipline"><span class="num">04</span><div class="title">Funcional</div><div class="sub">Foco intenso</div></div>
+<div class="discipline"><span class="num">05</span><div class="title">Calistenia</div><div class="sub">Energía sostenida</div></div>
+<div class="discipline"><span class="num">06</span><div class="title">Ciclistas</div><div class="sub">Pedaleadas largas</div></div>
+</div>
+
+<div class="for-you">
+<div class="col is">
+<h3 class="display">Es para vos si...</h3>
+<ul>
+<li><span class="marker y">+</span> Entrenás fuerte y necesitás rendir al máximo</li>
+<li><span class="marker y">+</span> Cuidás tu alimentación y evitás químicos</li>
+<li><span class="marker y">+</span> Estás cansado del crash de los pre-entrenos comunes</li>
+<li><span class="marker y">+</span> Querés energía real, no solo un rush de 1 hora</li>
+<li><span class="marker y">+</span> Necesitás foco mental además de energía física</li>
+<li><span class="marker y">+</span> Tenés objetivos fitness importantes y querés tu mejor versión</li>
+</ul>
+</div>
+<div class="col">
+<h3 class="display">No es para vos si...</h3>
+<ul>
+<li><span class="marker n">−</span> Solo buscás un café rico para el desayuno</li>
+<li><span class="marker n">−</span> Te da igual el rendimiento, solo querés despertar</li>
+</ul>
+<p class="footer-note">SHOCK está pensado para rendir, no para acompañar. Si solo querés un café rico, hay mejores opciones. Nosotros nos especializamos en rendimiento deportivo.</p>
+</div>
+</div>
+</section>
+
+<!-- ─────────────────────────── PACKS -->
+<section id="packs" class="wrap section">
+<div class="section-marker">[ <span class="acc">s.07</span> / Pricing ]</div>
+<div class="section-header">
+<span class="eyebrow">Elegí tu pack</span>
+<h2 class="display">Elegí cómo arrancás. <span class="accent">La garantía es nuestra.</span></h2>
+<p class="sub">Producimos partidas chicas para mantener trazabilidad de cada lote. Cuando se agota, esperás ~3 semanas al próximo tueste.</p>
+</div>
+
+<div class="urgency">
+<div class="urgency-row">
+<span class="urgency-tag">
+<span class="live"><span class="blink"></span>LIVE</span>
+/ Stock · Lote 2024-AA
+</span>
+<span class="urgency-tag" style="color:var(--accent)">▸ Tueste fresco</span>
+</div>
+<div class="urgency-headline">Solo quedan <span class="acc">~47 packs</span> del lote actual.</div>
+<div class="progress-wrap">
+<div class="progress-bar">
+<div class="fill"></div>
+<span class="pct">84% VENDIDO</span>
+</div>
+</div>
+<div class="urgency-meta">
+<span><strong>Próximo tueste en ~18 días</strong> — después esperás ~3 semanas más</span>
+<span class="acc">▸ Tu pack se despacha en 24 hs</span>
+</div>
+</div>
+
+<div class="packs-grid" style="grid-template-columns:1fr;max-width:520px;margin:0 auto">
+<div class="pack-card featured">
+<div class="pack-img">
+<span class="pack-img-tag" style="border-color:rgba(255,200,69,.4);color:var(--accent)">/ 250G · Pre-entreno</span>
+<img src="pack-250g.webp" alt="Shock Coffee Pre Entreno 250g">
+</div>
+<span class="label">/ Pre-entreno</span>
+<h3 class="display">Shock Coffee Pre Entreno 250g</h3>
+<div class="price-row">
+<span class="price">$22.900</span>
+<span class="price-old">$25.900</span>
+<span class="save">−12%</span>
+</div>
+<div class="price-mini">$916 por taza · ~25 tazas</div>
+<ul class="items">
+<li>1 pack de Shock Coffee Pre Entreno 250g</li>
+<li>~25 tazas de alto rendimiento</li>
+<li>Cafeína 300 mg + betaína, taurina, teacrina y electrolitos</li>
+<li>Cuchara dosificadora</li>
+<li>Manual de preparación óptima</li>
+</ul>
+<div class="cta-bottom">
+<a href="https://theshockcoffee.com/productos/pre-entreno/" target="_blank" class="btn btn-primary" style="width:100%;justify-content:center">Pedí mi pre-entreno <span class="arrow">→</span></a>
+</div>
+</div>
+</div>
+
+<div class="trust-line">
+<span><span class="acc">▸</span> Envío gratis +$75k</span>
+<span class="sep">/</span>
+<span><span class="acc">▸</span> 3 cuotas sin interés</span>
+<span class="sep">/</span>
+<span><span class="acc">▸</span> Garantía 7 días</span>
+<span class="sep">/</span>
+<span><span class="acc">▸</span> Empaque discreto</span>
+</div>
+
+<div class="guarantee">
+<span class="seal">Garantía / 100%</span>
+<div class="guarantee-head">
+<h3 class="display">'Sentí la diferencia' — el riesgo es nuestro.</h3>
+</div>
+<p>Tomalo durante 7 días. Si no notás más energía, más foco y cero crash en tus entrenos, te devolvemos el 100% de tu plata. Sin pruebas. Sin formularios. Sin letra chica. <strong>Te quedás con el pack. El error es nuestro, no tuyo.</strong></p>
+</div>
+</section>
+
+<!-- ─────────────────────────── FAQ -->
+<section class="wrap section" style="max-width:980px">
+<div class="section-marker">[ <span class="acc">s.08</span> / Dudas frecuentes ]</div>
+<div class="section-header">
+<span class="eyebrow">Preguntas frecuentes</span>
+<h2 class="display">Todo lo que <span class="accent">necesitás saber.</span></h2>
+<p class="sub">Antes de probar SHOCK, acá tenés las respuestas a las dudas más comunes.</p>
+</div>
+
+<div class="faq">
+<details class="faq-item"><summary><span class="faq-num">01</span><span class="faq-q">Cuánta cafeína tiene exactamente?</span><span class="faq-toggle">+</span></summary><div class="faq-a">Aproximadamente 300mg por taza preparada correctamente. Eso es 3x más que un café de filtro común y similar a un espresso triple. Si sos sensible, empezá con media dosis y andá subiendo. Para entrenar, la dosis completa es perfecta.</div></details>
+<details class="faq-item"><summary><span class="faq-num">02</span><span class="faq-q">Cuánto antes del entreno lo tomo?</span><span class="faq-toggle">+</span></summary><div class="faq-a">Idealmente 20-30 minutos antes. La cafeína alcanza su pico de efecto a los 45-60 minutos, así que vas a estar en tu mejor momento cuando más lo necesitás. La energía te va a durar todo el entreno y más.</div></details>
+<details class="faq-item"><summary><span class="faq-num">03</span><span class="faq-q">Me va a dar ansiedad o taquicardia?</span><span class="faq-toggle">+</span></summary><div class="faq-a">Es lo que más nos preguntan. La cafeína natural de SHOCK, potenciada con teacrina, te da energía pareja sin disparar cortisol: sin temblores ni taquicardia. Los electrolitos te sostienen hasta la última serie. Si sos muy sensible, empezá con menos y andá probando.</div></details>
+<details class="faq-item"><summary><span class="faq-num">04</span><span class="faq-q">Tengo gastritis/reflujo. Puedo tomarlo?</span><span class="faq-toggle">+</span></summary><div class="faq-a">SHOCK tiene un pH de 5.2, significativamente más bajo en acidez que el café comercial y los pre-entrenos comunes. Muchos usuarios con problemas gástricos nos escriben para decirnos que por fin pueden tomar algo antes de entrenar sin problemas.</div></details>
+<details class="faq-item"><summary><span class="faq-num">05</span><span class="faq-q">Cómo lo preparo? Necesito cafetera especial?</span><span class="faq-toggle">+</span></summary><div class="faq-a">Se prepara igual que cualquier café. Funciona con filtro, prensa francesa, cafetera italiana, espresso, lo que tengas. Si no tenés cafetera, un filtro de tela sirve perfecto. En la caja incluimos un manual con las proporciones óptimas para maximizar el efecto.</div></details>
+<details class="faq-item"><summary><span class="faq-num">06</span><span class="faq-q">Puedo combinarlo con otros suplementos?</span><span class="faq-toggle">+</span></summary><div class="faq-a">SHOCK Pre Entreno ya trae cafeína, betaína, taurina, teacrina y electrolitos integrados, así que para muchos reemplaza al pre-workout. Podés combinarlo con creatina o proteína sin problema. Tené en cuenta la cafeína total de tu día y no lo mezcles con otros estimulantes.</div></details>
+<details class="faq-item"><summary><span class="faq-num">07</span><span class="faq-q">Cuánto tarda el envío?</span><span class="faq-toggle">+</span></summary><div class="faq-a">Despachamos en menos de 24hs hábiles. En CABA y GBA generalmente llega en el día o al día siguiente. Al interior en 2-4 días dependiendo la zona. Envío gratis en compras de +$75.000.</div></details>
+<details class="faq-item"><summary><span class="faq-num">08</span><span class="faq-q">Qué pasa si no me gusta o no me hace efecto?</span><span class="faq-toggle">+</span></summary><div class="faq-a">Tenés 7 días para probarlo. Si no sentís la diferencia en energía y rendimiento, nos escribís y te devolvemos el 100% sin hacerte preguntas. El riesgo es nuestro, no tuyo.</div></details>
+</div>
+
+<p class="faq-cta">¿Tenés más preguntas? <a href="https://theshockcoffee.com" target="_blank">Escribinos</a> y te respondemos rápido.</p>
+</section>
+
+<!-- ─────────────────────────── CIERRE -->
+<section class="wrap cierre">
+<div class="section-marker">[ <span class="acc">s.09</span> / Cierre ]</div>
+<h2 class="display">No tomás café. <span class="acc">Tomás decisiones.</span></h2>
+<p>SHOCK es para los que entienden que el rendimiento empieza antes del primer set. Una taza, 30 minutos antes. Lo demás lo hacés vos.</p>
+<div class="cta-row">
+<a href="#packs" class="btn btn-primary">Pedí mi primer pack <span class="arrow">→</span></a>
+<span class="tag">Tenés cosas que hacer.</span>
+</div>
+
+<div class="cierre-stats">
+<div class="cell"><div class="v">300mg</div><div class="l">Cafeína natural</div></div>
+<div class="cell"><div class="v">6–8h</div><div class="l">De energía</div></div>
+<div class="cell"><div class="v">0</div><div class="l">Sintéticos</div></div>
+<div class="cell"><div class="v">94%</div><div class="l">Repiten</div></div>
+</div>
+</section>
+
+<!-- ─────────────────────────── FOOTER -->
+<footer class="wrap">
+<div class="footer-grid">
+<div>
+<div class="footer-logo">SHOCK COFFEE</div>
+<div class="footer-tag">El café pre-entreno para atletas que hacen</div>
+</div>
+<div class="footer-links">
+<a href="https://instagram.com/theshockcoffee" target="_blank" rel="noopener">Instagram</a>
+<a href="https://wa.me/" target="_blank" rel="noopener">WhatsApp</a>
+<a href="https://theshockcoffee.com" target="_blank" rel="noopener">Tienda</a>
+</div>
+</div>
+<div class="footer-bottom">
+<span>Tostado y envasado en Buenos Aires</span>
+<span>© 2026 SHOCK Coffee · Todos los derechos reservados</span>
+</div>
+</footer>
+
+<!-- ─────────────────────────── STICKY BAR -->
+<div class="sticky-bar">
+<div class="sticky-inner">
+<div class="sticky-text">Cuesta menos que un mes de pre-workout. <span class="acc">Rinde 3× más.</span></div>
+<a href="#packs" class="btn btn-primary">Pedí mi primer pack <span class="arrow">→</span></a>
+</div>
+</div>
+
+</body>
+</html>
